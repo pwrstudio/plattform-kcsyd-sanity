@@ -1,5 +1,3 @@
-import S from "@sanity/desk-tool/structure-builder"
-
 // ICONS
 import {
     MdPerson,
@@ -10,7 +8,7 @@ import {
     MdWater
 } from "react-icons/md"
 
-export default () =>
+export default (S) =>
     S.list()
         .title("Plattform KcSyd")
         .items([
