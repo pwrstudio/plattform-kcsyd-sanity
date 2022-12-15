@@ -34,6 +34,18 @@ export default {
             group: "eng"
         },
         {
+            title: 'Konstnärer',
+            name: 'konstnarer',
+            type: 'array',
+            of: [{
+                title: "Konstnär",
+                name: "konstnar",
+                type: "reference",
+                to: [{ type: 'konstnar' }]
+            }],
+            group: ["sve", "eng"]
+        },
+        {
             title: 'Tidskategori',
             name: 'tidskategori',
             type: 'string',

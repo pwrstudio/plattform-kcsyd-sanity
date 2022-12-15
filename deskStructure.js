@@ -5,7 +5,8 @@ import {
     MdWork,
     MdHome,
     MdMail,
-    MdWater
+    MdWater,
+    MdList
 } from "react-icons/md"
 
 export default (S) =>
@@ -71,5 +72,15 @@ export default (S) =>
                         .title("Information/Kontakt")
                         .schemaType("information-kontakt")
                         .documentId("information-kontakt")
+                ),
+            S.listItem()
+                .title("Listor")
+                .icon(MdList)
+                .child(
+                    S.editor()
+                        .id("listor")
+                        .title("Listor")
+                        .schemaType("listor")
+                        .documentId("listor")
                 ),
         ])
