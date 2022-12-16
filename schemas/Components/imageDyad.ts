@@ -23,7 +23,7 @@ export default {
         {
             title: "Bild (dither)",
             name: "dither",
-            readOnly: true,
+            // readOnly: true,
             type: "image",
         },
     ],

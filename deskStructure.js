@@ -6,7 +6,8 @@ import {
     MdHome,
     MdMail,
     MdWater,
-    MdList
+    MdList,
+    MdMap
 } from "react-icons/md"
 
 export default (S) =>
@@ -32,6 +33,16 @@ export default (S) =>
                         .title("Splash")
                         .schemaType("splash")
                         .documentId("splash")
+                ),
+            S.listItem()
+                .title("Miljöpolicy")
+                .icon(MdMap)
+                .child(
+                    S.editor()
+                        .id("miljopolicy")
+                        .title("Miljöpolicy")
+                        .schemaType("miljopolicy")
+                        .documentId("miljopolicy")
                 ),
             S.listItem()
                 .title("Om KcSyd")

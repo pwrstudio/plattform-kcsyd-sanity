@@ -8,5 +8,6 @@ import InformationKontakt from './Information-Kontakt';
 import Splash from './Splash';
 import Hemsidebild from './Hemsidebild';
 import Listor from './Listor';
+import MiljoPolicy from "./MiljoPolicy";
 
-export default [Listor, ImageDyad, ContentEditor, LimitedEditor, OmKcSyd, Projekt, Konstnar, InformationKontakt, Splash, Hemsidebild]
+export default [MiljoPolicy, Listor, ImageDyad, ContentEditor, LimitedEditor, OmKcSyd, Projekt, Konstnar, InformationKontakt, Splash, Hemsidebild]
