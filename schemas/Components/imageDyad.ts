@@ -30,7 +30,15 @@ export default {
     preview: {
         select: {
             title: 'bildtext_sve',
-            media: 'bild'
+            original: 'bild',
+            dither: 'dither'
         },
+        prepare(selection) {
+            const { title, original, dither } = selection
+            return {
+                title: title,
+                media: dither && dither.asset ? dither : original
+            }
+        }
     }
 }

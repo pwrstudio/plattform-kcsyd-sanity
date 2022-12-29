@@ -160,7 +160,15 @@ export default {
     preview: {
         select: {
             title: 'title',
-            media: 'mainImage.bild'
+            original: 'mainImage.bild',
+            dither: 'mainImage.dither'
         },
+        prepare(selection) {
+            const { title, original, dither } = selection
+            return {
+                title: title,
+                media: dither && dither.asset ? dither : original
+            }
+        }
     }
 }
