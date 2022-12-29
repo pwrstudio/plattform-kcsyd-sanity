@@ -21,19 +21,4 @@ export default defineConfig({
     schema: {
         types: schemas,
     },
-
-    document: {
-        newDocumentOptions: (prev, { creationContext }) => {
-            if (creationContext.type === 'global') {
-                return prev.filter((templateItem) => !specialPages.includes(templateItem.templateId))
-            }
-            return prev
-        },
-        actions: (prev, { schemaType }) => {
-            if (specialPages.includes(schemaType)) {
-                return prev.filter(({ action }) => !['unpublish', 'delete', 'duplicate'].includes(action))
-            }
-            return [...prev, HelloWorldAction]
-        },
-    },
 })

@@ -15,19 +15,13 @@ export default {
                     type: 'block',
                     styles: [
                         {
-                            title: 'Normal', value: 'normal', blockEditor: {
-                                render: normal
-                            }
+                            title: 'Normal', value: 'normal', component: normal
                         },
                         {
-                            title: 'Small', value: 'small', blockEditor: {
-                                render: small
-                            }
+                            title: 'Small', value: 'small', component: small
                         },
                         {
-                            title: 'H2', value: 'h2', blockEditor: {
-                                render: title
-                            }
+                            title: 'H2', value: 'h2', component: title
                         },
                     ],
                     lists: [],
