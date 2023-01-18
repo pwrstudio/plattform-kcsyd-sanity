@@ -3,11 +3,10 @@ import { Stack, Button, Card, Text } from '@sanity/ui'
 
 export const ConvertImagesInput = () => {
 
-    const IMAGE_SERVER = "https://converter.kcsyd-dev.com"
+    const IMAGE_SERVER = "https://plattform-kcsyd.cygnet-service.com"
 
     const document = {
         id: useFormValue([`_id`]),
-        type: useFormValue([`_type`])
     }
 
     let working = false;
@@ -20,6 +19,8 @@ export const ConvertImagesInput = () => {
         myHeaders.append("Content-Type", "application/json")
 
         let raw = JSON.stringify(document)
+
+        console.log(document);
 
         const requestOptions: RequestInit = {
             method: "POST",
